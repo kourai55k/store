@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ошибка {{.Status}}</title>
+  <!-- Подключаем CSS для страницы ошибок -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="error-container">
+    <h1>Ошибка {{.Status}}</h1>
+    <p>{{.Message}}</p>
+    <!-- Кнопка для возврата, например, на главную страницу -->
+    <a href="/products">Вернуться на главную</a>
+  </div>
+</body>
+</html>
