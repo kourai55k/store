@@ -10,18 +10,18 @@
   <div class="product-details">
     <h1>{{.Name}}</h1>
     <p><strong>Цена:</strong> {{.Price}} руб/{{.Measure}}</p>
+    {{if .CategoryName}}
     <p><strong>Категория:</strong> {{.CategoryName}}</p>
+  {{end}}
     {{if .ImageURL}}
       <img src="{{.ImageURL}}" alt="{{.Name}}">
-    {{else}}
-      <p>[Изображение отсутствует]</p>
     {{end}}
     {{if .Params}}
       <p><strong>Характеристики:</strong> {{.Params}}</p>
     {{end}}
-    <p>
-      <strong>В наличии:</strong> {{if .Stock}}Да{{else}}Нет{{end}}
-    </p>
+    {{if .Stock}}
+    <p><strong>В наличии:</strong> {{ .Stock }}</p>
+    {{end}}
     <a class="back-link" href="/products">Назад к списку продуктов</a>
   </div>
 </body>

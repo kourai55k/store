@@ -3,7 +3,7 @@ package repositories
 import (
 	"sync"
 
-	"github.com/kourai55k/store/internal/models"
+	"github.com/kourai55k/store/internal/domain/models"
 )
 
 // InMemoryProductRepository is an in-memory implementation of ProductRepository.

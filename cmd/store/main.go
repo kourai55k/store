@@ -65,6 +65,8 @@ func main() {
 	// Routes for web
 	r.HandleFunc("GET /products", productHandler.GetProducts)
 	r.HandleFunc("GET /products/{id}", productHandler.GetProductByID)
+	r.HandleFunc("GET /product/new", productHandler.CreateProductPage)
+	r.HandleFunc("POST /product/new", productHandler.CreateProduct)
 
 	// Routes for REST API
 

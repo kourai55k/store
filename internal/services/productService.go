@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/kourai55k/store/internal/models"
+	"github.com/kourai55k/store/internal/domain/models"
 )
 
 type ProductRepository interface {

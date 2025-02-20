@@ -19,12 +19,11 @@
           <p>Цена: {{.Price}} руб/{{.Measure}}</p>
           {{if .ImageURL}}
             <img src="{{.ImageURL}}" alt="{{.Name}}">
-          {{else}}
-            <p>[Изображение отсутствует]</p>
           {{end}}
         </div>
       </a>
       {{end}}
+      <a class="product-link" href="/product/new"><div class="product">Добавить новый товар</div></a>
       </div>
   </main>
 </body>

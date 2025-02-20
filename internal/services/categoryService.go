@@ -3,7 +3,7 @@ package services
 import (
 	"fmt"
 
-	"github.com/kourai55k/store/internal/models"
+	"github.com/kourai55k/store/internal/domain/models"
 )
 
 type CategoryRepository interface {
